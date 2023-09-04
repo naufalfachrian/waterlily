@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug WaterLily",
+            "program": "${workspaceFolder:waterlily}/.build/debug/WaterLily",
+            "args": [],
+            "cwd": "${workspaceFolder:waterlily}",
+            "preLaunchTask": "swift: Build Debug WaterLily"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release WaterLily",
+            "program": "${workspaceFolder:waterlily}/.build/release/WaterLily",
+            "args": [],
+            "cwd": "${workspaceFolder:waterlily}",
+            "preLaunchTask": "swift: Build Release WaterLily"
+        }
+    ]
+}
