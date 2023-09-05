@@ -12,7 +12,6 @@ struct CreateTwitterMetric: AsyncMigration {
             .field("tweets_count", .int, .required)
             .field("favorites_count", .int, .required)
             .field("created_at", .datetime, .required)
-            .unique(on: "account_id")
             .create()
     }
 

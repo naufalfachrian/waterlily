@@ -10,7 +10,6 @@ struct CreateInstagramMetric: AsyncMigration {
             .field("followings_count", .int, .required)
             .field("posts_count", .int, .required)
             .field("created_at", .datetime, .required)
-            .unique(on: "account_id")
             .create()
     }
 
